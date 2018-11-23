@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Elena Mikirtumova](https://up.htmlacademy.ru/htmlcss/23/user/918643).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
