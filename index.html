@@ -287,5 +287,25 @@
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <section class="modal modal-send">
+      <h2 class="visually-hidden">Написать сообщение</h2>
+      <form class="send-form" action="https://echo.technomart.ru" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input id="name-field" type="text" name="user-name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email-field">Ваш e-mail:</label>
+          <input id="email-field" type="email" name="user-email" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="message-field">Текст письма:</label>
+          <input id="message-field" type="text" name="message" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
