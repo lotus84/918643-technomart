@@ -464,7 +464,17 @@ a {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.breadcrumbs {
+  list-style: none;
+}
 
+.breadcrumbs a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
 .main-footer {
   background-color: #32425c;
