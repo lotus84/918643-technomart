@@ -426,6 +426,45 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.user-nav .user-account {
+  background-color: #f4f7f9;
+}
+
+.user-name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav.list {
+  list-style: none;
+  background-color: #f4f7f9;
+}
+
+.user-nav.list a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+ 
+.user-nav.list a:hover,
+.user-nav.list a:focus {
+  color: #ee3643;
+  background-color: #f4f7f9;
+}
+
+.user-nav.list a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+
+
 .main-footer {
   background-color: #32425c;
 }
