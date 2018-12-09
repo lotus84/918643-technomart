@@ -476,6 +476,110 @@ a {
   text-transform: uppercase;
 }
 
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+
+.filters h2,
+.sort-list h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;  
+}
+
+.filters-form fieldset {
+  border: none;
+}
+
+.filters-form legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filters-form ul {
+  list-style: none;
+}
+
+.filters-form li {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;  
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-input:disabled + label {
+  color:rgba(0, 0, 0, 0.4);
+}
+
+.filter-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:active {
+  border: 1px solid #ee3643;
+}
+
+.sort-list {
+  background-color: #f7f3ec;
+}
+
+.sort-list ul {
+  list-style: none;
+}
+
+.sort-kind a,
+.sort-updown a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-kind a:hover,
+.sort-kind a:focus, 
+.sort-updown a:hover,
+.sort-updown a:focus {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort-kind a:active,
+.sort-kind a.price-current,
+.sort-updown a:active,
+.sort-updown a.up-current {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
 .main-footer {
   background-color: #32425c;
 }
