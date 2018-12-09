@@ -618,6 +618,36 @@ a {
   border: 3px solid rgba(50, 66, 92, 0.3);
 }
 
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-item a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item .current {
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
+
+
 
 
 
