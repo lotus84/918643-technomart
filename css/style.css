@@ -661,10 +661,6 @@ a {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-
-
-
-
 .main-footer {
   background-color: #32425c;
 }
@@ -799,4 +795,26 @@ a {
 
 .button-row {
   background-color: #f4f4f4;
+}
+
+.item-added {
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.item-added h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal-continue {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
 }
