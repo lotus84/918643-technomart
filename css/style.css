@@ -272,6 +272,7 @@ a {
 
 .title-space h2 {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
@@ -408,6 +409,7 @@ a {
 
 .company-info h2 {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -423,6 +425,7 @@ a {
 
 .contacts h2 {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
