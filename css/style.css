@@ -105,20 +105,20 @@ a {
   background-color: #161d29;
 }
 
-.login-nav li a {
+.login-nav .link {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.login-nav li a:hover,
-.login-nav li a:focus {
+.login-nav .link:hover,
+.login-nav .link:focus {
   color: #ee3643;
   background-color: #ffffff;
 }
 
-.login-nav li a:active {
+.login-nav .link:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
 }
@@ -435,39 +435,56 @@ a {
 }
 
 .user-nav .user-account {
+  list-style: none;
   background-color: #f4f7f9;
 }
 
-.user-name {
+.user-account .user-name {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.user-name:active {
+.user-account .user-name:hover,
+.user-account .user-name:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-account .user-name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-nav.list {
-  list-style: none;
-  background-color: #f4f7f9;
+.user-account .logout-link {
+  color: #c5c5c5;
+  background-color: #ffffff;
 }
 
-.user-nav.list a {
+.user-account .logout-link:hover,
+.user-account .logout-link:focus {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.user-account .logout-link:active {
+  color: #c5c5c5;
+}
+
+.user-account .account-link{
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
 }
  
-.user-nav.list a:hover,
-.user-nav.list a:focus {
+.user-account .account-link:hover,
+.user-account .account-link:focus {
   color: #ee3643;
   background-color: #f4f7f9;
 }
 
-.user-nav.list a:active {
+.user-account .account-link:active {
   color: rgba(50, 66, 92, 0.3);
 }
 
@@ -571,9 +588,9 @@ a {
 }
 
 .sort-kind a:active,
-.sort-kind a.price-current,
+.sort-kind .price-current,
 .sort-updown a:active,
-.sort-updown a.up-current {
+.sort-updown .up-current {
   color: #ee3643;
   border-bottom: none;
 }
