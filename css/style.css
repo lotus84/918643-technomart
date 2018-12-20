@@ -481,7 +481,7 @@ a {
 
 /*--- Стили для шапки сайта (внутренняя страница) ---*/
 
-.user-nav .user-account {
+.block-wrapper .user-account {
   list-style: none;
   background-color: #f4f7f9;
 }
