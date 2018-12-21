@@ -394,7 +394,7 @@ a {
   align-items: center;
   margin-bottom: 20px;
   padding-left: 30px;
-  padding-right: 24px;
+  padding-right: 25px;
 }
 
 .title-space h2 {
@@ -419,8 +419,7 @@ a {
   width: 220px;
 }
 
-.popular-item-list,
-.catalog-list {
+.popular-item-list {
   list-style: none;
 }
 
@@ -626,6 +625,10 @@ a {
 
 /*--- Стили для шапки сайта (внутренняя страница) ---*/
 
+.main-header.catalog {
+  margin-bottom: 20px;
+}
+
 .block-wrapper .user-account {
   list-style: none;
   background-color: #f4f7f9;
@@ -684,6 +687,10 @@ a {
 
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
 }
 
 .breadcrumbs a {
@@ -696,10 +703,25 @@ a {
 
 .page-title {
   font-size: 30px;
+  font-weight: 400;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
   background-color: #f2f6f8;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters h2,
@@ -710,6 +732,8 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #f7f3ec;  
+  margin: 0;
+  padding: 0;
 }
 
 .filters-form fieldset {
@@ -756,11 +780,19 @@ a {
   border: 1px solid #ee3643;
 }
 
-.sort-list {
-  background-color: #f7f3ec;
+.catalog-wrapper {
+  width: 700px;
 }
 
-.sort-list ul {
+.sort-list {
+  background-color: #f7f3ec;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 700px;
+}
+
+.sort-kind {
   list-style: none;
 }
 
@@ -787,6 +819,26 @@ a {
 .sort-updown .up-current {
   color: #ee3643;
   border-bottom: none;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list li {
+  box-sizing: border-box;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-list li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .buy-button {
@@ -833,7 +885,10 @@ a {
 }
 
 .pagination-list {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-item a {
@@ -862,6 +917,12 @@ a {
 
 .item-description {
   background-color: #f4f7f9;
+  margin: 0;
+  margin-top: 60px;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 65px;
+  padding-bottom: 70px;
 }
 
 .item-description h2 {
@@ -869,6 +930,8 @@ a {
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .item-description p {
@@ -882,6 +945,10 @@ a {
 
   margin-top: 86px;
   padding: 0;
+}
+
+.main-footer.catalog {
+  margin-top: 0;
 }
 
 .footer-first {
