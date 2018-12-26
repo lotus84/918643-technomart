@@ -348,7 +348,7 @@ a {
 }
 
 .slides-switches p {
-  font-size: 18px;  
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -520,7 +520,7 @@ a {
 
 .services h2 {
   font-size: 30px;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
@@ -543,20 +543,20 @@ a {
   color: #ffffff;
   background-color: #32425c;
   border: none;
-  box-shadow: 
+  box-shadow:
     0 1px 0 0 #293449,
     inset 0 1px 0 0 #405069;
 }
 
 .button-service:hover,
-.button-service:focus { 
+.button-service:focus {
   background-color: #293449;
 }
 
 .button-service:active {
   color: #32425c;
   background-color: #ffffff;
-  box-shadow: 
+  box-shadow:
     0 1px 0 0 #ffffff,
     inset 0 1px 0 0 #ffffff;
 }
@@ -731,7 +731,7 @@ a {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  background-color: #f7f3ec;  
+  background-color: #f7f3ec;
   margin: 0;
   padding: 0;
 }
@@ -754,7 +754,7 @@ a {
 
 .filters-form li {
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 15px;  
+  font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
 }
@@ -806,7 +806,7 @@ a {
 }
 
 .sort-kind a:hover,
-.sort-kind a:focus, 
+.sort-kind a:focus,
 .sort-updown a:hover,
 .sort-updown a:focus {
   color: #000000;
@@ -871,7 +871,7 @@ a {
   background-color: #ffffff;
   text-align: center;
   vertical-align: middle;
-  border: 3px solid #63a63e;  
+  border: 3px solid #63a63e;
 }
 
 .wish-button:hover,
@@ -961,7 +961,7 @@ a {
 }
 
 .footer-contact {
-  width: 360px;  
+  width: 360px;
 }
 
 .footer-contact .footer-logo {
@@ -1099,7 +1099,7 @@ a {
 }
 
 .feedback a,
-.create a {  
+.create a {
   color: #ffd180;
 }
 
