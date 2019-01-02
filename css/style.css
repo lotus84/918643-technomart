@@ -144,8 +144,7 @@ input[type="radio"].visually-hidden {
 
 .search:focus,
 .search:active,
-.search input:focus,
-.search input:active {
+.search input:focus {
   background-color: #ffffff;
 }
 
