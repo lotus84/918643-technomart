@@ -1386,15 +1386,30 @@ input[type="radio"].visually-hidden {
 }
 
 .block-wrapper .user-account {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
   list-style: none;
   background-color: #f4f7f9;
 }
 
-.user-account .user-name {
+.user-account .user-box {
+  width: 243px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 47px;
+  padding-right: 10px;
+
+  background-color: #ffffff;
+}
+
+.user-box a {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .user-account .user-name:hover,
@@ -1407,36 +1422,95 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-account .logout-link {
-  color: #c5c5c5;
-  background-color: #ffffff;
+.user-box .user-name::before {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
 }
 
-.user-account .logout-link:hover,
-.user-account .logout-link:focus {
-  color: #32425c;
-  background-color: #ffffff;
+.user-box .user-name:hover::before,
+.user-box .user-name:focus::before {
+  opacity: 1;
 }
 
-.user-account .logout-link:active {
-  color: #c5c5c5;
+.user-box .user-name:active::before {
+  opacity: 0.3;
 }
 
-.user-account .account-link{
+.user-box .logout-link {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+
+  width: 20px;
+  height: 17px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.user-box .logout-link:hover,
+.user-box .logout-link:focus {
+  opacity: 1;
+}
+
+.user-box .logout-link:active {
+  opacity: 0.3;
+}
+
+.user-account .account-box {
+  padding-top: 7px;
+  padding-left: 17px;
+}
+
+.account-box .link {
+  padding-right: 30px;
+
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
   text-decoration: underline;
 }
- 
-.user-account .account-link:hover,
-.user-account .account-link:focus {
+
+.account-box .link:hover,
+.account-box .link:focus {
   color: #ee3643;
-  background-color: #f4f7f9;
 }
 
-.user-account .account-link:active {
-  color: rgba(50, 66, 92, 0.3);
+.account-box .link:active {
+  color: #32425c;
+  opacity: 0.3;
+}
+
+.user-account .account-box::after {
+  content: "";
+
+  position: absolute;
+  top: 60px;
+  left: 107px;
+
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+  background-color: #32425c;
 }
 
 /*--- Стили для основного содержания сайта (внутренняя страница) ---*/
