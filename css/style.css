@@ -1138,13 +1138,18 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-  background-color: #f4f7f9;
   margin: 0;
-  margin-bottom: 82px;
+  margin-bottom: 60px;
+  padding: 0;
   padding-top: 68px;
-  padding-bottom: 0;
-  padding-left: 130px;
-  padding-right: 120px;
+
+  background-color: #f4f7f9;
+}
+
+.services .services-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding-bottom: 22px;
 }
 
 .services h2 {
@@ -1175,7 +1180,23 @@ input[type="radio"].visually-hidden {
   background-color: #f4f7f9;
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
-  background-position: 470px 70px;
+  background-position: 460px 70px;
+}
+
+.services-slider::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 230px;
+  z-index: 20;
+
+  width: 10px;
+  height: 280px;
+
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .services-list {
@@ -1271,23 +1292,27 @@ input[type="radio"].visually-hidden {
 #service2:checked ~ .services-slider {
   background-color: #f4f7f9;
   background-image: url("../img/guarantee.png");
-  background-position: 560px 55px;
+  background-position: 550px 55px;
 }
 
 #service3:checked ~ .services-slider {
   background-color: #f4f7f9;
   background-image: url("../img/credit.png");
-  background-position: 485px 55px;
+  background-position: 475px 55px;
+}
+
+.info-wrapper {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .info-columns {
-  margin: 0;
-  padding: 0;
-  padding-left: 130px;
-  padding-right: 130px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
 }
 
 .company-info {
