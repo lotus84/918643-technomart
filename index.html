@@ -326,7 +326,7 @@
     </footer>
 
     <section class="modal modal-map">
-      <h2 class="visaully-hidden">Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map-big.jpg" width="940" height="446" alt="Офис компании по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       </p>
@@ -336,20 +336,24 @@
     <section class="modal modal-send">
       <h2 class="visually-hidden">Написать сообщение</h2>
       <form class="send-form" action="https://echo.technomart.ru" method="post">
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="user-name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="email" name="user-email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="message-field">Текст письма:</label>
-          <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
-        </p>
+        <div class="send-wrapper">
+          <div class="input-wrapper">
+            <p>
+              <label for="name-field">Ваше имя:</label>
+              <input id="name-field" type="text" name="user-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="email-field">Ваш e-mail:</label>
+              <input id="email-field" type="email" name="user-email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p>
+            <label for="message-field">Текст письма:</label>
+            <textarea id="message-field" name="message" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
         <div class="button-row">
-          <button class="button-red" type="submit">Отправить</button>
+          <button class="button-red button-send" type="submit">Отправить</button>
         </div>
       </form>
       <button class="modal-close" type="button">Закрыть</button>

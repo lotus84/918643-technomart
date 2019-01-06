@@ -1978,10 +1978,12 @@ input[type="radio"].visually-hidden {
 .filter-button:hover,
 .filter-button:focus {
   border: 1px solid #bdc6ca;
+  outline: none;
 }
 
 .filter-button:active {
   border: 1px solid #ee3643;
+  outline: none;
 }
 
 .catalog-wrapper {
@@ -2473,47 +2475,231 @@ input[type="radio"].visually-hidden {
 
 /*--- Стили для модальных окон ---*/
 
+.modal {
+  position: fixed;
+}
+
 .modal-map {
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+
+  display: none;
+
+  width: 940px;
+  height: 446px;
+  margin-top: -223px;
+  margin-left: -470px;
+
   background-color: #ffffff;
+  box-shadow:
+    0 0 20px 0 rgba(0, 0, 0, 0.75),
+    0 10px 20px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-map p {
+  margin: 0;
 }
 
 .modal-send {
+  top: 100px;
+  left: 50%;
+  z-index: 30;
+
+  display: none;
+
+  width: 620px;
+  margin-left: -310px;
+
   background-color: #ffffff;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+.send-form p {
+  margin: 0;
+  padding: 0;
+}
+
+.send-form .send-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 37px 80px;
+}
+
+.send-wrapper label {
+  display: block;
+}
+
+.send-wrapper textarea {
+  box-sizing: border-box;
+
+  width: 460px;
+  height: 115px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .send-form label {
+  padding-bottom: 10px;
   font-size: 18px;
   line-height: 18px;
+}
+
+.send-wrapper .input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
 }
 
 .send-form input[type="text"],
 .send-form input[type="email"],
 .send-form textarea {
+  padding-left: 13px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 18px;
   color: #a9a9a9;
 
-  border: 2px solid #dee3e4;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.send-form input[type="text"]:hover,
+.send-form input[type="email"]:hover,
+.send-form textarea:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.send-form input[type="text"]:focus,
+.send-form input[type="email"]:focus,
+.send-form textarea:focus {
+  border: 2px solid #ee3643;
+  outline: none;
+}
+
+.send-form input[type="text"],
+.send-form input[type="email"] {
+  box-sizing: border-box;
+
+  width: 220px;
+  height: 38px;
+  padding-right: 10px;
 }
 
 .button-row {
+  padding: 37px 80px;
   background-color: #f4f4f4;
 }
 
-.item-added {
-  background-color: #ffffff;
-  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+.button-row .button-send {
+  width: 100%;
+  cursor: pointer;
 }
 
-.item-added h2 {
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  right: -3px;
+
+  width: 26px;
+  height: 4px;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-added {
+  top: 120px;
+  left: 50%;
+  z-index: 30;
+
+  display: none;
+
+  width: 620px;
+  margin-left: -310px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+  border-top: 7px solid #ee3643;
+}
+
+.modal-added h2 {
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 180px;
+  padding-right: 30px;
+
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-  text-align: center;
+  text-align: left;
 }
 
-.modal-continue {
+.modal-added h2::before {
+  content: "";
+
+  position: absolute;
+  top: 55px;
+  left: 81px;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/form-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-added .button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 37px 80px;
+  background-color: #f1f1f1;
+}
+
+.button-wrapper .button-added {
+  width: 220px;
+}
+
+.button-wrapper .button-continue {
+  box-sizing: border-box;
+  width: 220px;
+  padding-top: 12px 40px;
+
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -2521,4 +2707,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: #ffffff;
   border: none;
+  border-radius: 3px;
+
+  cursor: pointer;
+}
+
+.button-wrapper .button-continue:hover,
+.button-wrapper .button-continue:focus {
+  color: #ffffff;
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.button-wrapper .button-continue:active {
+  color: #ffffff;
+  background-color: #ba2732;
+  outline: none;
 }
