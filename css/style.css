@@ -199,6 +199,23 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
 }
 
+.bookmark[class$="count"],
+.cart[class$="count"] {
+  background-color: #ee3643;
+}
+
+.bookmark[class$="count"]:hover,
+.bookmark[class$="count"]:focus,
+.cart[class$="count"]:hover,
+.cart[class$="count"]:focus {
+  background-color: #ca2c37;
+}
+
+.bookmark[class$="count"]:active,
+.cart[class$="count"]:active {
+  background-color: #ba2732;
+}
+
 .bookmark::before {
   content: "";
 
