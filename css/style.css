@@ -103,31 +103,19 @@ input[type="radio"].visually-hidden {
 }
 
 .search {
-  box-sizing: border-box;
-  
   position: relative;
 
-  width: 270px;
   margin: 0;
   margin-left: 220px;
   padding: 0;
 }
 
-.search label {
-  display: block;
-
-  padding-top: 10px;
-  padding-bottom: 11px;
-  padding-left: 48px;
-  padding-right: 5px;
-}
-
-.search::before {
+.search label::before {
   content: "";
 
   position: absolute;
-  top: 12px;
-  left: 17px;
+  top: 13px;
+  left: 13px;
 
   width: 17px;
   height: 17px;
@@ -139,42 +127,47 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.search input {
+.search .search-field {
+  box-sizing: border-box;
+  width: 270px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  padding-left: 50px;
+  padding-right: 10px;
+  
   background-color: #293449;
   border: none;
 }
 
-.search input::placeholder {
+.search .search-field::placeholder {
   font: inherit;
   color: #ffffff;
   opacity: 1;
 }
 
-.search input:focus::placeholder {
+.search .search-field:hover {
+  background-color: #212a3a;
+}
+
+.search .search-field:focus {
+  background-color: #ffffff;
+  outline: none;
+} 
+
+.search .search-field:focus::placeholder {
   color: #000000;
   opacity: 1;
 }
 
-.search label:hover,
-.search input:hover {
-  background-color: #212a3a;
-}
-
-.search:focus,
-.search input:focus {
-  background-color: #ffffff;
-}
-
-.search:hover::before {
+.search-field:hover + label::before {
   opacity: 1;
 }
 
-/*Не работает смена цвета при фокусе*/
-.search:focus::before {
+.search-field:focus + label::before {
   background-image: url("../img/icon-search-active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+} 
 
 .bookmark {
   display: block;
