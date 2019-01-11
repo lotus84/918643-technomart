@@ -2725,7 +2725,7 @@ input[type="radio"].visually-hidden {
   transform: rotate(-45deg);
 }
 
-.modal-added {
+.modal-item {
   top: 120px;
   left: 50%;
   z-index: 30;
@@ -2740,7 +2740,7 @@ input[type="radio"].visually-hidden {
   border-top: 7px solid #ee3643;
 }
 
-.modal-added h2 {
+.modal-item h2 {
   margin: 0;
   padding-top: 63px;
   padding-bottom: 70px;
@@ -2753,7 +2753,7 @@ input[type="radio"].visually-hidden {
   text-align: left;
 }
 
-.modal-added h2::before {
+.modal-item h2::before {
   content: "";
 
   position: absolute;
@@ -2768,7 +2768,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.modal-added .button-wrapper {
+.modal-item .button-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

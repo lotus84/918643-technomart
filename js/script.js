@@ -9,6 +9,10 @@ var sendForm = sendPopup.querySelector("form");
 var userName = sendPopup.querySelector("[name=user-name]");
 var userEmail = sendPopup.querySelector("[name=user-email]");
 var userMessage = sendPopup.querySelector("[name=message]");
+var itemLink = document.querySelector(".buy");
+var itemPopup = document.querySelector(".modal-item");
+var itemClose = itemPopup.querySelector(".modal-close");
+var itemNext = itemPopup.querySelector(".button-continue");
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -52,6 +56,30 @@ window.addEventListener("keydown", function (evt) {
     if (sendPopup.classList.contains("modal-show")) {
         if (evt.keyCode === 27) {
             sendPopup.classList.remove("modal-show")
+        }
+    }
+})
+
+itemLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    itemPopup.classList.add("modal-show");
+})
+
+itemClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    itemPopup.classList.remove("modal-show");
+})
+
+itemNext.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    itemPopup.classList.remove("modal-show");
+})
+
+window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (itemPopup.classList.contains("modal-show")) {
+        if (evt.keyCode === 27) {
+            itemPopup.classList.remove("modal-show")
         }
     }
 })
