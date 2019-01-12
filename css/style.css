@@ -2803,15 +2803,12 @@ input[type="radio"].visually-hidden {
   background-position: 50% 50%;
 }
 
-.social-button {
-  text-indent: -1000px;
-  overflow: hidden;
-  color: #ffffff;
+.footer-social .social-button {
   background-color: #212a3a;
 }
 
-.social-button:hover,
-.social-button:focus {
+.footer-social .social-button:hover,
+.footer-social .social-button:focus {
   background-color: #ee3643;
 }
 
