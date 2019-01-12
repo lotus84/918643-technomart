@@ -1687,6 +1687,9 @@ input[type="radio"].visually-hidden {
 .contacts .map-link {
   display: block;
   margin-bottom: 32px;
+
+  line-height: 0;
+
   background-color: gray;
 }
 
