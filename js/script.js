@@ -28,7 +28,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (mapPopup.classList.contains("modal-show")) {
         if (evt.keyCode === 27) {
-            mapPopup.classList.remove("modal-show")
+            mapPopup.classList.remove("modal-show");
         }
     }
 })
@@ -42,12 +42,16 @@ sendLink.addEventListener("click", function (evt) {
 sendClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     sendPopup.classList.remove("modal-show");
+    sendPopup.classList.remove("modal-error");
 })
 
 sendForm.addEventListener("submit", function (evt) {
     evt.preventDefault();
     if (!userName.value || !userEmail.value || !userMessage.value) {
         evt.preventDefault();
+        sendPopup.classList.remove("modal-error");
+        sendPopup.offsetWidth = sendPopup.offsetWidth;
+        sendPopup.classList.add("modal-error");
     }
 })
 
@@ -55,7 +59,8 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (sendPopup.classList.contains("modal-show")) {
         if (evt.keyCode === 27) {
-            sendPopup.classList.remove("modal-show")
+            sendPopup.classList.remove("modal-show");
+            sendPopup.classList.remove("modal-error");
         }
     }
 })
