@@ -1,12 +1,11 @@
 var mapLink = document.querySelector(".map-link");
 var mapPopup = document.querySelector(".modal-map");
-var mapImage = mapPopup.querySelector("img");
 var mapClose = mapPopup.querySelector(".modal-close");
 var sendLink = document.querySelector(".button-write");
 var sendPopup = document.querySelector(".modal-send");
+var userName = sendPopup.querySelector("[name=user-name]");
 var sendClose = sendPopup.querySelector(".modal-close");
 var sendForm = sendPopup.querySelector("form");
-var userName = sendPopup.querySelector("[name=user-name]");
 var userEmail = sendPopup.querySelector("[name=user-email]");
 var userMessage = sendPopup.querySelector("[name=message]");
 var itemLink = document.querySelector(".buy");
@@ -25,9 +24,9 @@ mapClose.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (mapPopup.classList.contains("modal-show")) {
-        if (evt.keyCode === 27) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (mapPopup.classList.contains("modal-show")) {
             mapPopup.classList.remove("modal-show");
         }
     }
@@ -46,7 +45,6 @@ sendClose.addEventListener("click", function (evt) {
 })
 
 sendForm.addEventListener("submit", function (evt) {
-    evt.preventDefault();
     if (!userName.value || !userEmail.value || !userMessage.value) {
         evt.preventDefault();
         sendPopup.classList.remove("modal-error");
@@ -56,9 +54,9 @@ sendForm.addEventListener("submit", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (sendPopup.classList.contains("modal-show")) {
-        if (evt.keyCode === 27) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (sendPopup.classList.contains("modal-show")) {
             sendPopup.classList.remove("modal-show");
             sendPopup.classList.remove("modal-error");
         }
@@ -81,9 +79,9 @@ itemNext.addEventListener("click", function (evt) {
 })
 
 window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (itemPopup.classList.contains("modal-show")) {
-        if (evt.keyCode === 27) {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (itemPopup.classList.contains("modal-show")) {
             itemPopup.classList.remove("modal-show")
         }
     }

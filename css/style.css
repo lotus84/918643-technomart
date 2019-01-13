@@ -3195,7 +3195,7 @@ input[type="radio"].visually-hidden {
   animation-duration: 0.6s;
 }
 
-.modal-send.modal-error {
+.modal-error {
   animation-name: shake;
   animation-duration: 0.6s;
 }
