@@ -3152,6 +3152,7 @@ input[type="radio"].visually-hidden {
 .button-row .button-send {
   width: 100%;
   cursor: pointer;
+  padding-left: 198px;
 }
 
 .modal-close {
@@ -3255,18 +3256,23 @@ input[type="radio"].visually-hidden {
 
 .button-wrapper .button-added {
   width: 220px;
+  padding-left: 59px;
 }
 
 .button-wrapper .button-continue {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+
   width: 220px;
-  padding-top: 12px 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 44px;
+  padding-right: 10px;
+  text-align: left;
 
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  text-align: center;
   text-transform: uppercase;
   background-color: #ffffff;
   border: none;
