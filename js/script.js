@@ -3,9 +3,9 @@ var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 var sendLink = document.querySelector(".button-write");
 var sendPopup = document.querySelector(".modal-send");
-var userName = sendPopup.querySelector("[name=user-name]");
 var sendClose = sendPopup.querySelector(".modal-close");
-var sendForm = sendPopup.querySelector("form");
+var sendForm = sendPopup.querySelector(".button-send");
+var userName = sendPopup.querySelector("[name=user-name]");
 var userEmail = sendPopup.querySelector("[name=user-email]");
 var userMessage = sendPopup.querySelector("[name=message]");
 var itemLink = document.querySelector(".buy");
@@ -44,7 +44,7 @@ sendClose.addEventListener("click", function (evt) {
     sendPopup.classList.remove("modal-error");
 })
 
-sendForm.addEventListener("submit", function (evt) {
+sendForm.addEventListener("click", function (evt) {
     if (!userName.value || !userEmail.value || !userMessage.value) {
         evt.preventDefault();
         sendPopup.classList.remove("modal-error");
