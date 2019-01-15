@@ -2289,8 +2289,9 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.filter-input:focus + label::before {
-  border-color: #b5b5b5;
+.filter-input-checkbox:focus + label::before,
+.filter-input-checkbox:focus + label::after,
+.filter-input-radio:focus + label::before {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
