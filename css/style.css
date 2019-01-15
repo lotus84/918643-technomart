@@ -689,7 +689,7 @@ input[type="radio"].visually-hidden {
   padding-left: 20px;
 }
 
-.materials::before {
+.item-group .card-new::before {
   content: "";
 
   position: absolute;
@@ -700,13 +700,6 @@ input[type="radio"].visually-hidden {
   width: 60px;
   height: 60px;
 
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.popular-item .flag-new,
-.catalog-item .flag-new {
   background-image: url("../img/new-flag.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1140,8 +1133,10 @@ input[type="radio"].visually-hidden {
   border: 1px solid #e5e5e5;
 }
 
-.popular-item .flag,
-.catalog-item .flag {
+.popular-item.item-new::before,
+.catalog-item.item-new::before {
+  content: "";
+
   position: absolute;
   top: -1px;
   right: -1px;
@@ -1150,6 +1145,10 @@ input[type="radio"].visually-hidden {
   height: 60px;
 
   z-index: 20;
+
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .popular-item .actions,
