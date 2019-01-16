@@ -1296,27 +1296,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.popular-item .price-box,
-.catalog-item .price-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-
-  min-height: 68px;
-
-  margin: 0;
-  padding: 0;
-}
-
 .popular-item .discount,
 .catalog-item .discount {
   display: block;
@@ -1348,6 +1327,11 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 2px;
+}
+
+.popular-item .no-discount,
+.catalog-item .no-discount {
+  margin-top: 40px;
 }
 
 .popular-item .button-item::after,
